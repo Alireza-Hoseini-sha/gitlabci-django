@@ -1,0 +1,12 @@
+volumes:
+  django-test-volume:
+    name: django-test-volume
+services:
+  simple_app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "6567:8000"
+    volumes:
+      - django-test-volume:/home/app/simple_app

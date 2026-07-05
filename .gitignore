@@ -1,0 +1,7 @@
+app/__pycache__/__init__.cpython-314.pyc
+app/__pycache__/tests.cpython-314.pyc
+simple_app/__pycache__/__init__.cpython-314.pyc
+simple_app/__pycache__/settings.cpython-314.pyc
+simple_app/__pycache__/urls.cpython-314.pyc
+simple_app/__pycache__/wsgi.cpython-314.pyc
+app/migrations/__pycache__/__init__.cpython-314.pyc
