@@ -3,6 +3,7 @@ volumes:
     name: django-test-volume
 services:
   simple_app:
+    image: "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
     build:
       context: .
       dockerfile: dockerfile
