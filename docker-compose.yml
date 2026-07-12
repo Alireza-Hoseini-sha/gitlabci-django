@@ -4,9 +4,6 @@ volumes:
 services:
   simple_app:
     image: "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
-    build:
-      context: .
-      dockerfile: dockerfile
     ports:
       - "6567:8000"
     volumes:
