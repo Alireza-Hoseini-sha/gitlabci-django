@@ -1,3 +1,7 @@
+networks:
+  gitlab-net:
+    name: gitlab-net
+
 volumes:
   django-test-volume:
     name: django-test-volume
@@ -9,4 +13,5 @@ services:
       - "6567:8000"
     volumes:
       - django-test-volume:/home/app/simple_app
-    networks: bridge
+    networks:
+      - gitlab-net
