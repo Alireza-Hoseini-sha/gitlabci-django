@@ -1,6 +1,7 @@
 networks:
   gitlab-net:
-    name: gitlab-net
+    name: gitlab-network
+    external: true
 
 volumes:
   django-test-volume:
