@@ -6,13 +6,7 @@ stages:
   - deploy
 
 before_script:
-  - whoami
-  - id
-  - pwd
-  - env | sort
-  - ls -l /var/run/docker.sock
-  - docker version
-  - docker info
+
   - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
   
 build:
