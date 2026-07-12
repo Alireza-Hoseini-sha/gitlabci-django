@@ -1,6 +1,7 @@
 volumes:
   django-test-volume:
     name: django-test-volume
+
 services:
   simple_app:
     image: "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
@@ -8,3 +9,4 @@ services:
       - "6567:8000"
     volumes:
       - django-test-volume:/home/app/simple_app
+    network: bridge
