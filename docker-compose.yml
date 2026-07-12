@@ -9,4 +9,4 @@ services:
       - "6567:8000"
     volumes:
       - django-test-volume:/home/app/simple_app
-    network: bridge
+    networks: bridge
