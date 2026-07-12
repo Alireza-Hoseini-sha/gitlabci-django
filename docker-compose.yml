@@ -1,6 +1,6 @@
 networks:
   gitlab-net:
-    name: gitlab-network
+    name: gitlab-net
     external: true
 
 volumes:
